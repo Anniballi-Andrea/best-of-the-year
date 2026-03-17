@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <th:block th:replace="~{fragments :: title(|Best of the year by ${name}|)}" />
+</head>
+
+<body>
+    <header>
+        <h1>songs page</h1>
+    </header>
+
+    <main>
+        <th:block th:each="movie : ${songList}">
+            <section>
+                <h3>[[*{movie.title}]]</h3>
+            </section>
+        </th:block>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
