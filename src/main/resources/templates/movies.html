@@ -3,29 +3,43 @@
 
 <head>
     <th:block th:replace="~{fragments :: title(|Best of the year by ${name}|)}" />
+    <th:block th:replace="~{fragments :: style}"></th:block>
 </head>
 
 <body>
 
     <header>
-        <h1>movies page</h1>
+        <th:block th:replace="~{fragments :: header}">
+
+        </th:block>
+
     </header>
 
     <main>
-        <th:block th:each="movie : ${movieList}">
-            <section>
-                <h3>[[*{movie.title}]]</h3>
-                <div>
-                    <a th:href="@{/movies/{id}(id=${movie.id})}">apri</a>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 d-flex justify-content-center mt-5 ">
+                    <h1>Best Movies</h1>
                 </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-4">
+                <th:block th:each="movie : ${movieList}">
+                    <div class="d-flex justify-content-center border border-dark pt-3 pb-3">
+                        <a class="text-decoration-none text-dark" th:href="@{/movies/{id}(id=${movie.id})}">
+                            <h3>[[*{movie.title}]]</h3>
+                        </a>
+                    </div>
+            </div>
+        </div>
 
-                <a href="/">torna alla home</a>
-            </section>
         </th:block>
 
     </main>
 
     <footer>
+        <th:block th:replace="~{fragments :: footer}"></th:block>
 
     </footer>
 

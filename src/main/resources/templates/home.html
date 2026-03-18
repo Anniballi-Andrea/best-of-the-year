@@ -3,24 +3,68 @@
 
 <head>
     <th:block th:replace="~{fragments :: title(|Best of the year by ${name}|)}" />
+    <th:block th:replace="~{fragments :: style}">
+
+    </th:block>
 </head>
 
 <body>
     <header>
-        <h1>homepage</h1>
+        <th:block th:replace="~{fragments :: header}">
+
+        </th:block>
+
     </header>
 
     <main>
-        <div>
-            <a href="/movies">lista film</a>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 d-flex justify-content-center mt-5 ">
+                    <h1>Best Of By [[${name}]]</h1>
+                </div>
+                <div class="col-12 d-flex justify-content-center mt-3">
+                    <img src="https://placehold.co/960x600" alt="">
+                </div>
+                <div class="col-12 mt-5">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, explicabo, ad similique modi
+                    praesentium illo magni minus beatae
+                    temporibus error inventore asperiores consectetur magnam repellendus odit quibusdam omnis impedit
+                    hic iure ea maxime dicta doloribus porro.
+                    Hic suscipit facilis iusto facere temporibus, eligendi ab quod aliquam modi? Quod illum recusandae
+                    nihil sunt nam asperiores error, reprehenderit
+                    facilis quo inventore nemo officiis ipsam minus harum consequatur eveniet tempore velit cumque nisi
+                    sapiente consequuntur id? Quae vitae beatae aperiam
+                    debitis nisi quod laboriosam ea. Iste blanditiis dolores, nesciunt labore earum, placeat similique
+                    minus debitis id distinctio vel, sed hic magnam veniam
+                    consequuntur illo sit accusamus. Veniam deleniti maxime aliquam consectetur unde rerum minima nihil,
+                    quam laborum provident iste, similique nostrum
+                    ligendi? Reprehenderit ut in, exercitationem quod corporis voluptas quisquam mollitia dicta enim,
+                    doloremque, pariatur obcaecati velit voluptates
+                    praesentium veniam! Est accusantium totam, recusandae nihil odit quam odio! Dicta tempore inventore
+                    cupiditate iusto autem mollitia quos adipisci similique
+                    saepe et eum suscipit aliquam dolores aut voluptates quas illo, aperiam quam, ut accusantium, sunt
+                    libero modi sed. Impedit eligendi qui quae id eaque odit
+                    delectus sit, minima aperiam, placeat facilis neque laudantium vel. Quo ipsam, voluptatibus incidunt
+                    obcaecati dolorum ad. Perspiciatis molestias obcaecati
+                    necessitatibus hic perferendis mollitia fugit, voluptatibus dolorem aut minus neque dolor eveniet
+                    quibusdam iste ipsa ex animi cumque a consequuntur. Ad odit
+                    nihil sed laudantium excepturi. Quia corrupti rem cum labore doloribus iusto excepturi blanditiis
+                    magni sunt amet, fugit ipsam est consequuntur quisquam hic!
+                    Asperiores excepturi exercitationem hic nemo, praesentium assumenda culpa magnam cumque iste ipsa
+                    eius repellendus iure doloremque perferendis quas eligendi
+                    aliquid nobis voluptate nesciunt fuga porro qui quae tempora! Hic facilis nostrum iure, in nemo
+                    repudiandae dolorum culpa voluptates
+                    recusandae maiores corporis, vitae soluta cum. Explicabo distinctio, quo rerum a doloremque cum,
+                    doloribus enim iure ab, tempore pariatur.
+                </div>
+            </div>
         </div>
-        <div>
-            <a href="/songs">lista musica</a>
-        </div>
+
 
     </main>
 
     <footer>
+        <th:block th:replace="~{fragments :: footer}"></th:block>
 
     </footer>
 </body>
