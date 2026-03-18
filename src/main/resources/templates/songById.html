@@ -7,17 +7,15 @@
 
 <body>
     <header>
-        <h1>homepage</h1>
+        <h1>la card di una canzone</h1>
     </header>
 
     <main>
         <div>
-            <a href="/movies">lista film</a>
+            <h1 th:text="${song.title}"></h1>
+            <a href="/">torna alla home</a>
+            <a href="/songs">torna alle canzoni</a>
         </div>
-        <div>
-            <a href="/songs">lista musica</a>
-        </div>
-
     </main>
 
     <footer>

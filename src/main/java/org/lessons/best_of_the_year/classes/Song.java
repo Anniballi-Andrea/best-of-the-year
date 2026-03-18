@@ -11,6 +11,11 @@ public class Song implements Serializable {
         this.title = title;
     }
 
+    public Song() {
+        this.id = 0;
+        this.title = null;
+    }
+
     public int getId() {
         return this.id;
     }

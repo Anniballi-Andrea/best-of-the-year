@@ -11,9 +11,14 @@
     </header>
 
     <main>
-        <th:block th:each="movie : ${songList}">
+        <th:block th:each="song : ${songList}">
             <section>
-                <h3>[[*{movie.title}]]</h3>
+                <h3>[[*{song.title}]]</h3>
+                <div>
+                    <a th:href="@{/songs/{id}(id=${song.id})}">apri</a>
+                </div>
+
+                <a href="/">torna alla home</a>
             </section>
         </th:block>
     </main>

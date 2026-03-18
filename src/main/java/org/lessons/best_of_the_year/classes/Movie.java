@@ -11,6 +11,11 @@ public class Movie implements Serializable {
         this.title = title;
     }
 
+    public Movie() {
+        this.id = 0;
+        this.title = null;
+    }
+
     public int getId() {
         return this.id;
     }
